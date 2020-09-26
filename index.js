@@ -230,33 +230,41 @@ return `The artist at index ${index} is ${artistIndex.name}.`;
 }
 
 getArtistByIndex(artists,8)
-  /**
+
+/**
 
 
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born in and died in 20th century (1900-2000) example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not included - should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(/* Code here */){
-
-  /* Code here */
-
+function get20s(arr){
+let bornIn20s = [];
+for (let i = 0; i < arr.length; i++) {
+  let years = arr[i].years.split(" - ");
+  let birthYear = Number(years[0]);
+  let deathYear = Number(years[1]);
+  if (birthYear >= 1900 && deathYear <= 2000) {
+    bornIn20s.push(arr[i].name);  
+  }
+} 
+return bornIn20s;
 }
-
+get20s(artists);
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
- *     (1) artists array
- *     (2) a number which is the desired index in the array.
- * removeArtist removes an artist from the array at the index and console.logs the length of the remaining dataset.
- * 
- * For example, if removeArtist is invoked with the data and the number 0,
- * it will remove Amedeo Modigliani from our dataset and log the number 19. 
- * 
- * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
+*     (1) artists array
+*     (2) a number which is the desired index in the array.
+* removeArtist removes an artist from the array at the index and console.logs the length of the remaining dataset.
+* 
+* For example, if removeArtist is invoked with the data and the number 0,
+* it will remove Amedeo Modigliani from our dataset and log the number 19. 
+* 
+* Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
-function removeArtist(/*code here*/) {
-    /* code here */
-  }
-  
- 
+function removeArtist(arr, index) {
+  return arr[index];
+}
+
+console.log(artists.length);
 
 /**
 /* Task 6: Create a function called `addArtist` that can accept an object of information and add it to the artists array. Then, add a 21st artist to the array (you) with custom information!👩‍🎨👨‍🎨
@@ -273,13 +281,13 @@ At the end, this function should return the new array with information added"*/
 
 function addArtist(/* Code here */){
 
-    /* Code here */
+  /* Code here */
 
-  }
+}
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
-    (1) artists array 
+  (1) artists array 
 
 and returns an array with names of artists who painted more than 100 paintings.
 
@@ -287,7 +295,7 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 
 function lotsOfArt(/* Code here */){
 
-  /* Code here */
+/* Code here */
 
 }
 
@@ -302,10 +310,10 @@ In HTML, every artist and associated content uses the following structure:
 
 <div id="artist">
 <div class="image">
-    <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/starry-night-by-vincent-van-gogh-vincent-van-gogh.jpg"/>
+  <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/starry-night-by-vincent-van-gogh-vincent-van-gogh.jpg"/>
 </div>
 <div class = "name">
-   <a href="https://en.wikipedia.org/wiki/Vincent_van_Gogh"> Vincent Van Gogh</a>
+ <a href="https://en.wikipedia.org/wiki/Vincent_van_Gogh"> Vincent Van Gogh</a>
 </div>
 <div class = "bio">Vincent Willem van Gogh (Dutch: [ˈvɪnsɛnt ˈʋɪləm vɑŋ ˈɣɔx] (listen); 30 March 1853 – 29 July 1890) was a Dutch Post-Impressionist painter who is among the most famous and influential figures in the history of Western art. In just over a decade he created about 2,100 artworks, including around 860 oil paintings, most of them in the last two years of his life. They include landscapes, still lifes, portraits and self-portraits, and are characterised by bold colours and dramatic, impulsive and expressive brushwork that contributed to the foundations of modern art. However, he was not commercially successful, and his suicide at 37 followed years of mental illness and poverty.</div>
 </div>
@@ -318,18 +326,18 @@ The function should console.log 50 chunks of HTML code that match the structure 
 
 function getHTML(/* Code here */){
 
-    /* Code here */
+  /* Code here */
 
-  }
+}
 
 
 /* STRETCH 2: Create a function called `randomize` that takes a data array as an argument and returns a the same array in a randomized order. */
 
 function randomize(/* Code here */){
 
-    /* Code here */
+  /* Code here */
 
-  }
+}
 
 
- /* STRETCH 3: Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) */
+/* STRETCH 3: Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) */
