@@ -135,7 +135,10 @@ button:hover{
     width:100%;
 }
 /*Media Query Here*/
-@media (min-width: 500px) {
+@media only screen and (max-width: 500px) {
+    body {
+        font-size: 1rem;
+    }
     nav a {
         margin: 0 5%;
     }
@@ -149,9 +152,12 @@ button:hover{
         margin: 0 auto;
         width: 100%;
     }
+    .artist img {
+        width: 75%;
+        height: auto;
+    }
     .artist {
-        width: 80%;
-        height: max-content;
+        width: 70%;
         margin-left: auto;
         margin-right: auto;
     }
