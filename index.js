@@ -207,6 +207,7 @@ const artists = [
 
 (1) Name of the first artist (0th index) in the array
 (2) Bio of the third artist (2nd index) in the array */
+console.log(artist[0])
 
 
 
