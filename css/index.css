@@ -134,3 +134,26 @@ button:hover{
 .artist img{
     width:100%;
 }
+/*Media Query Here*/
+@media (min-width: 500px) {
+    .bio {
+        width: 115%;
+        align-items: center;
+        margin: 0 0 0 -10%;
+    }
+    .title-container div {
+        width: 100%;
+        opacity: 70%;
+        height: 30vh;
+    }
+    section.artists-container {
+        display: inline-block;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .artist {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+  }
