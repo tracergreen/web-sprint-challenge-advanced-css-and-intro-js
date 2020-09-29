@@ -134,3 +134,31 @@ button:hover{
 .artist img{
     width:100%;
 }
+/*Media Query Here*/
+@media only screen and (max-width: 500px) {
+    body {
+        font-size: 1rem;
+    }
+    nav a {
+        margin: 0 5%;
+    }
+    .title-container div {
+        width: 100%;
+        opacity: 70%;
+        height: 30vh;
+    }
+    .artists-container {
+        display: inline-block;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .artist img {
+        width: 75%;
+        height: auto;
+    }
+    .artist {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+  }

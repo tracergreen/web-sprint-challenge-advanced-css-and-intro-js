@@ -22,10 +22,14 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
-1. How would you describe acessibility on the web to someone new to programming?
-2. Talk about 3 different things you can do to ensure your website is accessible. 
-3. How would you explain the concept of a variable to someone new to programming?
-4. What is the purpose of using functions in code?
+1. How would you describe acessibility on the web to someone new to programming? // accessibility is important because it allows others to access your data freely - should an image not load, or a person experiencing blindness were to access your site, it would be beneficial for the site to "read" aloud the image details.
+
+
+2. Talk about 3 different things you can do to ensure your website is accessible. // You want to ensure your site is keyboard friendly, meaning someone can navigate your site using only their keyboard (and without the use of a mouse). Also, add alternative text to your images - this allows someone to "see" an image even if they cannot physically see it with their eyes. It also helps in case an image is unable to load by allowing the user to still understand the context of the site. Additionally, the use of resizable text will allow the person accessing the site to increase the scale of text for a better reading experience. This also plays a part in scaling a site down to mobile devices as well.
+
+3. How would you explain the concept of a variable to someone new to programming? //Just like in math where "x" or "y" holds the place of a number, a variable holds the place of data and can often be replaced at any time. 
+
+4. What is the purpose of using functions in code? //Functions allow tasks to be run at a certain point in time vs. code outside of functions which is run immediately when the browser loads. They also combine multiple steps into one succinct package which can be called many times with many fewer words.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
@@ -35,15 +39,15 @@ You are expected to be able to answer questions in these areas. Your responses c
 
 Follow these steps to set up your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [X] Create a forked copy of this project.
+- [X] Clone your OWN version of the repository (Not Lambda's by mistake!).
+- [X] Create a new branch: git checkout -b `<firstName-lastName>`.
 
 ### Task 2a:  Minimum Viable Product - Responsive Design
 
 *Before you jump in, take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built. During this time, [Review the provided design files](design/). You have been provided all content necessary in the [index.html file](index.html) and basic styling in the [index.css file](css/index.css).*
 
-* [ ] Add a viewport meta tag to the head of your index.html page.
+* [X] Add a viewport meta tag to the head of your index.html page.
 * [ ] Add responsive breakpoints to your code for 500px such that your styles match the [mobile design file](design/Mobile.png).
 
 ### Task 2b: Minimum Viable Product - JavaScript
